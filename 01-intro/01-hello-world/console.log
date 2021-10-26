@@ -1,0 +1,117 @@
+C:\Users\Andrey>cd /d D:\tmp\htmlcss-20211021
+
+D:\tmp\htmlcss-20211021>git clone https://github.com/barkadron/htmlcss-20211021_barkadron
+Cloning into 'htmlcss-20211021_barkadron'...
+remote: Enumerating objects: 59, done.
+remote: Counting objects: 100% (59/59), done.
+remote: Compressing objects: 100% (45/45), done.
+remote: Total 59 (delta 17), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (59/59), done.
+
+D:\tmp\htmlcss-20211021>cd htmlcss-20211021_barkadron
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>npm install
+npm notice
+npm notice New major version of npm available! 7.6.3 -> 8.1.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.1.1
+npm notice Run npm install -g npm@8.1.1 to update!
+npm notice
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+
+added 224 packages, and audited 225 packages in 17s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+8 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>npm install -g npm@8.1.1
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'npm@8.1.1',
+npm WARN EBADENGINE   required: { node: '^12.13.0 || ^14.15.0 || >=16' },
+npm WARN EBADENGINE   current: { node: 'v15.12.0', npm: '7.6.3' }
+npm WARN EBADENGINE }
+npm ERR! code MODULE_NOT_FOUND
+npm ERR! Cannot find module 'agentkeepalive'
+npm ERR! Require stack:
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\agent.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\index.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-fetch\index.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\remote.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\git.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\fetcher.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\index.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\lib\utils\update-notifier.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+npm ERR! - C:\Users\Andrey\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Andrey\AppData\Local\npm-cache\_logs\2021-10-24T19_52_48_916Z-debug.log
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git remote add upstream https://github.com/js-tasks-ru/htmlcss-20211021_barkadron.git
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git remote -v
+origin  https://github.com/barkadron/htmlcss-20211021_barkadron (fetch)
+origin  https://github.com/barkadron/htmlcss-20211021_barkadron (push)
+upstream        https://github.com/js-tasks-ru/htmlcss-20211021_barkadron.git (fetch)
+upstream        https://github.com/js-tasks-ru/htmlcss-20211021_barkadron.git (push)
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git pull upstream master
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/js-tasks-ru/htmlcss-20211021_barkadron
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+Updating 68cc440..0aae20e
+Fast-forward
+ 01-intro/01-hello-world/README.md             |  67 ++++++++++++++++++++++++++
+ 01-intro/01-hello-world/public/tag.png        | Bin 0 -> 23387 bytes
+ 01-intro/01-hello-world/solution.html         |   1 +
+ 01-intro/01-hello-world/test/solution.test.js |   7 +++
+ 4 files changed, 75 insertions(+)
+ create mode 100644 01-intro/01-hello-world/README.md
+ create mode 100644 01-intro/01-hello-world/public/tag.png
+ create mode 100644 01-intro/01-hello-world/solution.html
+ create mode 100644 01-intro/01-hello-world/test/solution.test.js
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git checkout -b 01-hello-world
+Switched to a new branch '01-hello-world'
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git status
+On branch 01-hello-world
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   01-intro/01-hello-world/solution.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git commit -am "add solution for 1-module 1-task"
+[01-hello-world 951e91a] add solution for 1-module 1-task
+ 1 file changed, 13 insertions(+)
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>git push origin 01-hello-world
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 610 bytes | 610.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for '01-hello-world' on GitHub by visiting:
+remote:      https://github.com/barkadron/htmlcss-20211021_barkadron/pull/new/01-hello-world
+remote:
+To https://github.com/barkadron/htmlcss-20211021_barkadron
+ * [new branch]      01-hello-world -> 01-hello-world
+
+D:\tmp\htmlcss-20211021\htmlcss-20211021_barkadron>
