@@ -19,9 +19,19 @@
     color: var(--white);
 }
 
+.button_primary:hover {
+    background: #2342C0;
+    transition: background 200ms ease-in-out;
+}
+
 .button_secondary {
     background: var(--purple);
     color: var(--white);
+}
+
+.button_secondary:hover {
+    background: #5028C6;
+    transition: background 200ms ease-in-out;
 }
 
 .button_alternate {
@@ -30,7 +40,13 @@
     color: var(--grey-4);
 }
 
+.button_alternate:hover {
+    border-color: #212429;
+    transition: border 200ms ease-in-out;
+}
+
 .button_disabled {
     cursor: not-allowed;
     opacity: 0.5;
+    transition: opacity 200ms ease-in-out;
 }
