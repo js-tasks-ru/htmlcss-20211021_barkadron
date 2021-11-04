@@ -23,7 +23,8 @@
     color: var(--white);
 }
 
-.button_primary:hover {
+.button_primary:focus,
+.button_primary:hover:not([disabled]) {
     background: #2342C0;
 }
 
@@ -32,7 +33,8 @@
     color: var(--white);
 }
 
-.button_secondary:hover {
+.button_secondary:focus,
+.button_secondary:hover:not([disabled]) {
     background: #5028C6;
 }
 
@@ -42,12 +44,12 @@
     color: var(--grey-4);
 }
 
-.button_alternate:hover {
+.button_alternate:focus,
+.button_alternate:hover:not([disabled]) {
     border-color: #212429;
 }
 
-.button:disabled,
-.button_disabled {
+.button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
