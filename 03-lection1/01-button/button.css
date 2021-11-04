@@ -46,6 +46,7 @@
     border-color: #212429;
 }
 
+.button:disabled,
 .button_disabled {
     cursor: not-allowed;
     opacity: 0.5;
