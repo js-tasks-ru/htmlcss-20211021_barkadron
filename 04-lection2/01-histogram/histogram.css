@@ -1,0 +1,77 @@
+.histogram {
+    --blue: #4263EB;
+
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+
+    font-style: normal;
+    font-weight: normal;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 185px; /* фиксированная высота из макета */
+    min-width: 141px; /* минимальная ширина, при котором компонент не разносит на кусочки */
+    width: 100%;
+}
+
+.histogram__counter {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.histogram__title {
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    opacity: 0.8;
+    margin:  0;
+}
+
+.histogram__value {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+    margin: 6px 0 0 0;
+    width: 100%;
+}
+
+.histogram__filter {
+    flex-grow: 1;
+    margin: 3px 0 0 6px;
+}
+
+.histogram__switcher {
+    color: var(--blue);
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    margin: 0;
+}
+
+.histogram__chart {
+    align-self: flex-end;
+    align-items: flex-end;
+    display: flex;
+    margin: 0 5px 0 2px;
+    height: 50px; /* фиксированная высота из макета */
+    width: 100%;
+}
+
+.histogram__bar {
+    background-color: var(--blue);
+    flex-basis: 100%;
+    margin: 0 1px 0 0;
+}
+
+.histogram__bar:last-child {
+    margin: 0;
+}
