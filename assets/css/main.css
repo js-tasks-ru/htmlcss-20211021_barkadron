@@ -2,6 +2,7 @@
 
 :root {
     --white: #ffffff;
+    --white-2: #F9FAFC;
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
@@ -21,4 +22,21 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* box-sizing нужен, чтобы вручную не пересчитывать max-width при добавлении padding.
+        - border-box - сдвигает заголовок на величину padding, но сохраняет ширину контейнера.
+        - content-box - не сдвигает заголовок, максимальная ширина контейнера увеличивается на виличину padding, 
+            но под сам контент внутри контейнера пространство сохраняется неизменным.
+    */
+    box-sizing: content-box;
 }
