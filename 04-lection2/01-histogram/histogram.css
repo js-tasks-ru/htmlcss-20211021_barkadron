@@ -1,6 +1,4 @@
 .histogram {
-    --blue: #4263EB;
-
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -13,9 +11,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    height: 185px; /* фиксированная высота из макета */
-    min-width: 141px; /* минимальная ширина, при котором компонент не разносит на кусочки */
-    width: 100%;
+    min-width: 141px; /* минимальная ширина, при котором компонент ещё выглядит симпатично */
 }
 
 .histogram__counter {
@@ -61,14 +57,15 @@
     align-self: flex-end;
     align-items: flex-end;
     display: flex;
-    margin: 0 5px 0 2px;
+    flex-basis: 100%;
+    margin: 39px 5px 0 2px;
     height: 50px; /* фиксированная высота из макета */
-    width: 100%;
 }
 
 .histogram__bar {
     background-color: var(--blue);
-    flex-basis: 100%;
+    flex-basis: 9px;
+    flex-grow: 1;
     margin: 0 1px 0 0;
 }
 
