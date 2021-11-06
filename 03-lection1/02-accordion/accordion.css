@@ -1,1 +1,67 @@
 /* Стилизация аккордеона */
+
+/* Скрытие стандартной и отрисовку кастомной стрелочки подсмотрел тут:
+    https://developer.mozilla.org/ru/docs/Web/HTML/Element/details
+*/
+
+.accordion {
+    background: var(--white);
+}
+
+.accordion__item {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+
+    margin-bottom: 8px;
+    padding: 24px 32px;
+}
+
+.accordion__item[open] {
+    color: var(--black);
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
+    cursor: pointer;
+    font-family: Inter;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__summary::after {
+    content: '\276F'; /* стрелка ВПРАВО - https://www.toptal.com/designers/htmlarrows/symbols/heavy-right-pointing-angle-quotation-mark-ornament/ */
+    color: var(--grey-4);
+    font-size: 24px;
+    transform: rotate(90deg) translateX(-20%) translateY(20%); /* дефолтный поворот стрелки ВНИЗ. translate даёт прикольный эффект при переворачивании стрелки, по-моему */
+    transition: all 120ms ease-in-out; /* анимация поворота стрелочки */
+}
+
+.accordion__item[open] > .accordion__summary::after {
+    transform: rotate(-90deg) translateX(20%) translateY(-20%); /* поворот стрелки ВВЕРХ при раскрытии */
+}
+
+.accordion__content {
+    font-family: Inter;
+
+    color: var(--grey-4);
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding: 16px 24px 8px 0px;
+}
