@@ -9,9 +9,15 @@
     font-weight: normal;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     min-width: 141px; /* минимальная ширина, при котором компонент ещё выглядит симпатично */
+}
+
+.histogram__header {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .histogram__counter {
@@ -54,10 +60,8 @@
 }
 
 .histogram__chart {
-    align-self: flex-end;
     align-items: flex-end;
     display: flex;
-    flex-basis: 100%;
     margin: 39px 5px 0 2px;
     height: 50px; /* фиксированная высота из макета */
 }
