@@ -15,6 +15,11 @@
     min-width: 170px; /* минимальный размер, при котором компонент ещё выглядит более-менее симпатично */
 }
 
+.skeleton__header {
+    flex-grow: 1;
+    display: flex;
+}
+
 .skeleton__avatar {
     background-color: var(--grey-2);
     height: 64px;
@@ -43,11 +48,11 @@
 }
 
 .skeleton__bar--small {
-    max-width: 172px;
+    /* max-width: 172px; */
     width: 34.46%;
 }
 
 .skeleton__bar--medium {
-    max-width: 257px;
+    /* max-width: 257px; */
     width: 51.49%;
 }
