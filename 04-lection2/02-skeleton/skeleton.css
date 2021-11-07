@@ -1,0 +1,53 @@
+.skeleton {
+    --skeleton-grey-1: #E2E6E8;
+    --skeleton-grey-2: #F3F5F5;
+    --skeleton-grey-3: #E3E7EA;
+
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 24px;
+    min-width: 170px; /* минимальный размер, при котором компонент ещё выглядит более-менее симпатично */
+}
+
+.skeleton__avatar {
+    background-color: var(--grey-2);
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.skeleton__title {
+    flex-grow: 1;
+    margin: 0 0 0 16px;
+}
+
+.skeleton__content {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.skeleton__bar {
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--skeleton-grey-1) 38.47%, var(--skeleton-grey-2) 56.48%, var(--skeleton-grey-3) 77.5%, var(--grey-2) 102.52%);
+    height: 20px;
+    margin: 8px 18px 0 0;
+}
+
+.skeleton__bar:last-child {
+    margin: 8px 18px 8px 0;
+}
+
+.skeleton__bar--small {
+    max-width: 172px;
+    width: 34.46%;
+}
+
+.skeleton__bar--medium {
+    max-width: 257px;
+    width: 51.49%;
+}
