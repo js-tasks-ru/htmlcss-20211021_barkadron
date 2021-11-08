@@ -1,0 +1,67 @@
+.calendar {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-style: normal;
+    text-align: center;
+
+    padding: 28px 26px 0 26px;
+}
+
+.calendar__title {
+    color: var(--blue-grey-1);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.calendar__content {
+    position: relative;
+    padding: 0 0 100% 0; /* для формирования резиновой квадратной области (padding-bottom считается по ширине контейнера) */
+}
+
+.calendar__grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(7, 1fr);
+    margin: 24px 0 0 0;
+}
+
+.calendar__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-grey-1);
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.calendar__item--day_name {
+    padding: 0 0 16px 0;
+}
+
+/* составной селектор, чтобы перебить дублирующиеся основные стили */
+.calendar__item.calendar__item--day_name {
+    color: var(--grey-5);
+    font-family: Inter;
+    font-size: 14px;
+}
+
+.calendar__item--active {
+    background: var(--blue-2);
+    color: var(--white);
+}
+
+.calendar__item--beetween_active {
+    background-color: var(--blue-op-1);
+}
