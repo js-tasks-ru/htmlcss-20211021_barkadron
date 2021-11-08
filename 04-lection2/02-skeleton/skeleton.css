@@ -1,8 +1,4 @@
 .skeleton {
-    --skeleton-grey-1: #E2E6E8;
-    --skeleton-grey-2: #F3F5F5;
-    --skeleton-grey-3: #E3E7EA;
-
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -38,7 +34,7 @@
 }
 
 .skeleton__bar {
-    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--skeleton-grey-1) 38.47%, var(--skeleton-grey-2) 56.48%, var(--skeleton-grey-3) 77.5%, var(--grey-2) 102.52%);
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
     height: 20px;
     margin: 8px 0 0 0;
 }
