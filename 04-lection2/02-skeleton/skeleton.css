@@ -1,0 +1,54 @@
+.skeleton {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 24px;
+    min-width: 170px; /* минимальный размер, при котором компонент ещё выглядит более-менее симпатично */
+}
+
+.skeleton__header {
+    flex-grow: 1;
+    display: flex;
+}
+
+.skeleton__avatar {
+    background-color: var(--grey-2);
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.skeleton__title {
+    flex-grow: 1;
+    margin: 0 0 0 16px;
+}
+
+.skeleton__content {
+    margin: 24px 18px 0 0;
+    width: 100%;
+}
+
+.skeleton__bar {
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+    height: 20px;
+    margin: 8px 0 0 0;
+}
+
+.skeleton__bar:last-child {
+    margin: 8px 0 8px 0;
+}
+
+.skeleton__bar--small {
+    /* max-width: 172px; */
+    width: 34.46%;
+}
+
+.skeleton__bar--medium {
+    /* max-width: 257px; */
+    width: 51.49%;
+}
