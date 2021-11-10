@@ -2,10 +2,28 @@
 <!-- Страница со скелетоном -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
+        <style>
+            body {
+                margin: 30px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="skeleton">
+            <div class="skeleton__header">
+                <div class="skeleton__avatar"></div>
+                <div class="skeleton__title">
+                    <div class="skeleton__bar skeleton__bar--small"></div>
+                    <div class="skeleton__bar skeleton__bar--medium"></div>
+                </div>
+            </div>
+            <div class="skeleton__content">
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar"></div>
+            </div>
+        </div>
     </body>
 </html>
