@@ -11,8 +11,8 @@
 .tooltip__bubble {
     position: absolute;
     left: 50%;
-    top: -1px;
-    transform: translate(-50%, -115%);
+    top: calc(100% - 77px);
+    transform: translate(-50%);
     display: none;
 
     background: var(--blue-2);
