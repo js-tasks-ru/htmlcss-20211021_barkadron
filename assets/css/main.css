@@ -25,6 +25,8 @@
 
     --grey-op-1: rgba(33, 36, 41, 0.05);
 
+    --grey-op-2: rgba(196, 196, 196, 0.5); /* #C4C4C4 */
+
     --error: var(--red);
     --success: var(--blue);
 
