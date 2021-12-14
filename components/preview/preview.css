@@ -1,17 +1,4 @@
 .preview {
     background-color: var(--white-2);
     flex-grow: 1;
-    padding: 68px 0 92px 0;
-}
-
-.preview__grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
-
-.preview__card {
-    flex-basis: 30%;
-    margin: 15px;
-    height: 367px; /* фиксированная высота из макета */
 }

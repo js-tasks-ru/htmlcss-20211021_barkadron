@@ -23,6 +23,8 @@
 
     --grey-op-1: rgba(33, 36, 41, 0.05);
 
+    --grey-op-1: rgba(33, 36, 41, 0.05);
+
     --error: var(--red);
     --success: var(--blue);
 
